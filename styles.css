@@ -1,0 +1,41 @@
+@media (min-width: 375px) {
+  body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+  }
+  .container {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 6px;
+    padding-right: 0;
+    margin: 10em auto;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 1.5rem 6rem 0 1.5rem;
+  }
+  #highlight {
+    color: hsl(277, 64%, 61%);
+  }
+  h3 {
+    padding: 3rem 6rem 0 1.5rem;
+  }
+  p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 1rem 6rem 0 1.5rem;
+  }
+  .col .image {
+    margin: 0;
+    padding: 0;
+  }
+  .col img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 0 6px 6px 0;
+  }
+  .col img #overlay {
+    background-color: hsl(277, 64%m 61%);
+  }
+}
