@@ -69,7 +69,9 @@ p {
   margin: 0;
   padding: 0;
   /* position: relative; */
-
+.img-container {
+  position: relative;
+}
 .image {
   margin: 0;
   padding: 0;
