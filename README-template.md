@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -40,71 +40,71 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My FrontendMentor Solution](https://your-solution-url.com)
 
 ## My process
+
+At first, I wanted to attempt to accomplish the whole thing without using bootstrap so I could practice the skills that I never learned because Bootstrap was used as a crutch during my initial coding workshops. But, it became frustrating and apparent that this particular project was actually a great time to use Bootstrap. So I imported that and got to building the grid. Once all of the HTML text was set in place I turned my focus to the CSS. It wasn't difficult to clone the card until I reached the colored image overlay. I have previous experience using z-index but I wasn't seeing anyone else use it in their solution to this project, after a while I decided that it was the best use for my project. Then I addressed the "mobile-friendly" version and called it a day.
 
 ### Built with
 
 - Semantic HTML5 markup
+- Bootstrap
+- Google Fonts
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+It's been a while since I've practiced my CSS skills so it was fun to dive back into that. I was able to revisit using z-index to accomplish the violet colored overlay used for the image. It was also nice to become reacquainted with Bootstrap. I have a better understanding of gutters/padding now.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="col image">
+  <img
+    src="./images/image-header-desktop.jpg"
+    alt="Three women coding together in an office setting."
+    class="px-0 gx-0"
+  />
+  <div class="overlay"></div>
+</div>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.col .image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.col img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 0 6px 6px 0;
+  z-index: 1;
+  position: relative;
+  filter: contrast(100%);
+}
+.overlay {
+  background-color: hsl(277, 97%, 54%);
+  width: 606px;
+  height: 501px;
+  z-index: 2;
+  position: absolute;
+  margin-top: -501px;
+  opacity: 45%;
+  border-radius: 0 6px 6px 0;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+As I mentioned, I haven't used Bootstrap or CSS in a while (I've been focusing on Java and JS lately) so I'd like to become better with those. CSS seems so powerful to me and intricate, I feel like I've barely scratched the surface. Especially when I read other peoples CSS, they use so many tags/properties that I've never even heard of.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Bootstrap](https://getbootstrap.com/docs/5.0/layout/gutters/) - This helped me understand gutters in Bootstrap a bit better.
+- [w3Schools](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp) - This helped me gain a better grasp on media queries to adjust the screen size and configuration.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Nikki Klein](https://www.kleinlikecalvin.com)
+- Frontend Mentor - [@streetlightkids](https://www.frontendmentor.io/profile/streetlightkids
