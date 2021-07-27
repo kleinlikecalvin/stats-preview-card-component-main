@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--Import Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Import Favicon-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--Link CSS-->
   <link rel="stylesheet" href="styles.css">
+  <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
@@ -14,18 +18,16 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!--Start Container-->
 <div class="container">
   <div class="row">
+    <!--Start information half of card-->
     <div class="col info p-5">
       <h1> Get <span id="highlight">insights</span> that help your business grow.</h1>
       <p class="">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <!--Stats row in information half of card-->
       <div class="row g-0">
         <div class="col stats">
           <h3>10k+</h3>
@@ -40,19 +42,26 @@
           <p>QUERIES</p>
         </div>
       </div>
+      <!--End stats row-->
     </div>
+    <!--End information half of card-->
+    <!--Start image half of card-->
     <div class="col image">
       <img src="./images/image-header-desktop.jpg" alt="Three women coding together in an office setting." class="px-0 gx-0">
       <div id="overlay"></div>
     </div>
+    <!--End image half of card-->
   </div>
 </div>
+<!--End card container-->
 
-
+<!--Start attribution links-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.kleinlikecalvin.com">Nikki Klein</a>.
   </div>
+<!--End attribution links-->
+<!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
