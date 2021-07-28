@@ -72,11 +72,6 @@ p {
 .img-container {
   position: relative;
 }
-.img-container::after {
-  padding-bottom: 82.5926%;
-  display: block;
-  content: "";
-}
 .image {
   margin: 0;
   padding: 0;
@@ -96,6 +91,7 @@ p {
   bottom: 0;
   right: 0;
   opacity: 50%;
+  padding-bottom: 82.5926%;
 }
 /* @media screen and (min-width: 1400px) {
   .overlay {
