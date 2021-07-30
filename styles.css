@@ -15,18 +15,19 @@ body {
   border-radius: 6px;
   padding: 0;
   margin: 10rem auto;
+  max-width: 1440px;
 }
 
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  padding: 5rem 5rem 1rem 5rem !important;
+  padding: 5rem 5rem 1rem 5rem;
 }
 #highlight {
   color: hsl(277, 64%, 61%);
 }
 h3 {
-  padding: 3rem 0 0 5rem !important;
+  padding: 3rem 0 0 5rem;
 }
 
 p {
@@ -34,10 +35,10 @@ p {
   letter-spacing: 1px;
 }
 .info-p {
-  padding: 0 3rem 3rem 5rem !important;
+  padding: 0 3rem 3rem 5rem;
 }
 .stats p {
-  padding: 0 0 0 5rem !important;
+  padding: 0 0 0 5rem;
 }
 
 .img-container {
@@ -64,15 +65,15 @@ p {
   opacity: 50%;
   padding-bottom: 82.5926%;
 }
-@media screen and (max-width: 1385px) {
-  .container {
-    margin: 2rem;
-  }
+@media screen and (max-width: 1370px) {
   body {
     max-width: 375px;
     margin: auto;
   }
-  .switch {
+  .container {
+    margin: 2rem;
+  }
+  .mobile-info {
     flex-direction: column-reverse;
   }
   .container {
@@ -83,19 +84,22 @@ p {
     text-align: center;
   }
   h1 {
-    padding: 0 !important;
+    padding: 0;
   }
   h3 {
-    padding: 0 !important;
+    padding: 0;
   }
   .info-p {
-    padding: 0 !important;
+    padding: 0;
+  }
+  .mobile-stats {
+    flex-direction: column;
   }
   .stats {
     margin-top: 1rem;
   }
   .stats p {
-    padding: 0 !important;
+    padding: 0;
   }
   .image {
     border-radius: 6px 6px 0 0;
