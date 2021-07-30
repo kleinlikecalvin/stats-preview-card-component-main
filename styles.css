@@ -66,12 +66,14 @@ p {
 }
 @media screen and (max-width: 1385px) {
   .container {
-    flex-direction: column-reverse !important;
     margin: 2rem;
   }
   body {
     max-width: 375px;
     margin: auto;
+  }
+  .switch {
+    flex-direction: column-reverse;
   }
   .container {
     margin: 2rem auto;
@@ -88,6 +90,9 @@ p {
   }
   .info-p {
     padding: 0 !important;
+  }
+  .stats {
+    margin-top: 1rem;
   }
   .stats p {
     padding: 0 !important;
