@@ -16,9 +16,7 @@ body {
   padding: 0;
   margin: 10rem auto;
 }
-.info {
-  padding-right: 5rem !important;
-}
+
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -67,7 +65,37 @@ p {
   padding-bottom: 82.5926%;
 }
 @media screen and (max-width: 1385px) {
-  .img-container {
-    flex-direction: column-reverse;
+  .container {
+    flex-direction: column-reverse !important;
+    margin: 2rem;
+  }
+  body {
+    max-width: 375px;
+    margin: auto;
+  }
+  .container {
+    margin: 2rem auto;
+  }
+  .info {
+    padding: 3rem;
+    text-align: center;
+  }
+  h1 {
+    padding: 0 !important;
+  }
+  h3 {
+    padding: 0 !important;
+  }
+  .info-p {
+    padding: 0 !important;
+  }
+  .stats p {
+    padding: 0 !important;
+  }
+  .image {
+    border-radius: 6px 6px 0 0;
+  }
+  .overlay {
+    border-radius: 6px 6px 0 0;
   }
 }
