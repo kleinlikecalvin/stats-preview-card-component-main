@@ -52,6 +52,7 @@ At first, I wanted to attempt to accomplish the whole thing without using bootst
 - Bootstrap
 - Google Fonts
 - CSS custom properties
+- Flexbox
 
 ### What I learned
 
@@ -108,3 +109,7 @@ As I mentioned, I haven't used Bootstrap or CSS in a while (I've been focusing o
 
 - Website - [Nikki Klein](https://www.kleinlikecalvin.com)
 - Frontend Mentor - [@streetlightkids](https://www.frontendmentor.io/profile/streetlightkids
+
+## Acknowledgements
+
+- I'd like to thank Nate Walston for continuously being a great mentor.
