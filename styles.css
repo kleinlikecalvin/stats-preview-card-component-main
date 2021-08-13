@@ -13,6 +13,9 @@ body {
   margin: 10rem auto;
   max-width: 1110px;
 }
+.col {
+  max-width: 50%;
+}
 .info {
   padding: 5rem;
 }
@@ -49,7 +52,6 @@ p {
   padding: 0;
   object-fit: cover;
   border-radius: var(--desk-img-border-radius);
-  overflow: hidden;
   width: 100%;
   height: 100%;
   opacity: 90%;
@@ -85,12 +87,16 @@ p {
   color: hsl(228, 100%, 74%);
 }
 @media screen and (max-width: 1370px) {
-  body {
-    margin: auto;
+  html{
+    --mobile-img-brdr-rad: 8px 8px 0 0;
   }
-  .container {
-    margin: 3rem auto;
+  body {
+    font-size: 90%;
     max-width: 375px;
+    margin: 10rem auto;
+  }
+  .col{
+    max-width: 100%;
   }
   .info {
     padding: 3rem;
@@ -99,16 +105,35 @@ p {
   .mobile-info {
     flex-direction: column-reverse;
   }
-  .stats {
-    margin-bottom: 0;
+  .info h1 {
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
   }
-  .mobile-stats {
+  p {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .mobile-stats{
     flex-direction: column;
   }
+  .stats {
+    justify-content: space-between;
+  }
+  .stats p{
+    font-size: 14px;
+  }
+  .stats h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
   .image {
-    border-radius: 6px 6px 0 0;
+    border-radius: var(--mobile-img-brdr-rad);
   }
   .overlay {
-    border-radius: 6px 6px 0 0;
+    border-radius: var(--mobile-img-brdr-rad);
+  }
+  .dbl-overlay{
+    border-radius: var(--mobile-img-brdr-rad);
+  
   }
 }
