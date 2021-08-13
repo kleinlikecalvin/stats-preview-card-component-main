@@ -26,10 +26,6 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-### Screenshot
-
-![](/images/Screen Shot 2021-08-13 at 11.28.21 AM.png)
-
 ### Links
 
 - Solution URL: [My FrontendMentor Solution](https://www.frontendmentor.io/solutions/stat-preview-card-slMBDEiOd)
