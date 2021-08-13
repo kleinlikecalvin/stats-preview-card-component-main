@@ -1,21 +1,14 @@
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
-  font-size: 15px;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 100%, 74%);
+  font-size: 90%;
 }
 .container {
   background-color: hsl(244, 38%, 16%);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0;
   margin: 10rem auto;
-  max-width: 1120px;
+  max-width: 1110px;
 }
 .info {
   padding: 5rem;
@@ -23,6 +16,7 @@ body {
 .info h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 .info #highlight {
@@ -30,11 +24,11 @@ body {
 }
 p {
   color: #9d9bb4;
-  letter-spacing: .7px;
+  letter-spacing: 1px;
+  margin-bottom: 20%;
 }
 .stats {
   justify-content: space-between;
-  margin-top: 3rem;
 }
 .stats h2{
   font-size: 165%;
@@ -47,7 +41,6 @@ p {
   padding: 0;
   object-fit: cover;
   border-radius: 0 6px 6px 0;
-  filter: contrast(100%);
   width: 100%;
   height: 100%;
 }
@@ -58,18 +51,25 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 70%;
+  opacity: 50%;
   padding-bottom: 82.5926%;
   mix-blend-mode: multiply;
 }
 .dbl-overlay{
   background-color: hsl(277, 97%, 54%);
-  opacity: 30%;
+  opacity: 20%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 100%, 74%);
 }
 @media screen and (max-width: 1370px) {
   body {
@@ -77,7 +77,7 @@ p {
     margin: auto;
   }
   .container {
-    margin: 2rem auto;
+    margin: 3rem auto;
   }
   .info {
     padding: 3rem;
@@ -86,9 +86,9 @@ p {
   .mobile-info {
     flex-direction: column-reverse;
   }
-  .stats {
+  /* .stats {
     padding-top: 1rem;
-  }
+  } */
   .mobile-stats {
     flex-direction: column;
   }
