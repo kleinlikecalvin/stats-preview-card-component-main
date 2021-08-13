@@ -1,3 +1,6 @@
+html{
+  --desk-img-border-radius: 0 8px 8px 0;
+}
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
@@ -17,7 +20,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 .info #highlight {
   color: hsl(277, 64%, 61%);
@@ -25,13 +28,18 @@ body {
 p {
   color: #9d9bb4;
   letter-spacing: 1px;
-  margin-bottom: 20%;
+  margin-bottom: 4.3rem;
 }
 .stats {
   justify-content: space-between;
 }
+.stats p {
+  margin-bottom: 0;
+  font-size: 80%;
+}
 .stats h2{
   font-size: 165%;
+  margin-bottom: 0;
 }
 .img-container {
   position: relative;
@@ -40,9 +48,11 @@ p {
   margin: 0;
   padding: 0;
   object-fit: cover;
-  border-radius: 0 6px 6px 0;
+  border-radius: var(--desk-img-border-radius);
+  overflow: hidden;
   width: 100%;
   height: 100%;
+  opacity: 90%;
 }
 .overlay {
   background-color: hsl(277, 97%, 54%);
@@ -51,18 +61,21 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 50%;
+  opacity: 58%;
   padding-bottom: 82.5926%;
   mix-blend-mode: multiply;
+  border-radius: var(--desk-img-border-radius);
 }
 .dbl-overlay{
   background-color: hsl(277, 97%, 54%);
-  opacity: 20%;
+  opacity: 21%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
+  border-radius: var(--desk-img-border-radius);
+
 }
 .attribution {
   font-size: 11px;
@@ -73,11 +86,11 @@ p {
 }
 @media screen and (max-width: 1370px) {
   body {
-    max-width: 375px;
     margin: auto;
   }
   .container {
     margin: 3rem auto;
+    max-width: 375px;
   }
   .info {
     padding: 3rem;
@@ -86,9 +99,9 @@ p {
   .mobile-info {
     flex-direction: column-reverse;
   }
-  /* .stats {
-    padding-top: 1rem;
-  } */
+  .stats {
+    margin-bottom: 0;
+  }
   .mobile-stats {
     flex-direction: column;
   }
