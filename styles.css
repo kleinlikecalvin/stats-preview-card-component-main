@@ -107,7 +107,6 @@ p {
   }
   .info h1 {
     font-size: 2rem;
-    margin-bottom: 1.7rem;
   }
   p {
     margin-bottom: 0px;
@@ -134,6 +133,5 @@ p {
   }
   .dbl-overlay{
     border-radius: var(--mobile-img-brdr-rad);
-  
   }
 }
